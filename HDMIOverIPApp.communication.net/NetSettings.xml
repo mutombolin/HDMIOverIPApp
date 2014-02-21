@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+  <ipaddress>192.168.100.10</ipaddress>
+  <port>8000</port>
+  <transmit_retries>3</transmit_retries>
+  <transmit_timeout_ms>500</transmit_timeout_ms>
+  <receive_timeout_ms>1000</receive_timeout_ms>
+</settings>
