@@ -21,6 +21,12 @@ namespace HDMIOverIPApp.communication.net
         [XmlElementAttribute("port")]
         public string port = "8000";
 
+        [XmlElementAttribute("multicastaddress")]
+        public string multicastAddress = "239.0.0.222";
+
+        [XmlElementAttribute("multicastport")]
+        public string multicastPort = "8888";
+
         [XmlElementAttribute("transmit_retries")]
         public int TransmitRetries = 3;
 

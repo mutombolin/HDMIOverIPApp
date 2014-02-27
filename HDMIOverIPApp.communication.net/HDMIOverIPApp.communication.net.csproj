@@ -40,11 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeviceData.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="NetComm.cs" />
+    <Compile Include="NetMaster.cs" />
     <Compile Include="NetSettings.cs" />
-    <Compile Include="Packet.cs" />
+    <Compile Include="Packet.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SocketPacket.cs" />
+    <Compile Include="TCPComm.cs" />
+    <Compile Include="UDPComm.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HDMIOverIPApp.diagnostics.trace\HDMIOverIPApp.diagnostics.trace.csproj">

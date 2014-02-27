@@ -15,4 +15,14 @@ namespace HDMIOverIPApp.communication.net
         ErrorUnknownCommand,
         ErrorEmptyFrame,
     }
+
+    public enum NetCommand : byte
+    { 
+        Status = 0x1,
+        SetSTBControlType,
+        GetMCUVersion,
+        SetIR = 0x10,
+        SendIRRawPattern = 0x11,
+        SetTVCommand = 0x20,
+    }
 }

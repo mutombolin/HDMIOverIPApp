@@ -123,7 +123,7 @@ namespace HDMIOverIPApp.communication.net
                         // Add length
                         byte[] length = BitConverter.GetBytes((Int16)ncd.Data.Length);
 
-                        foreach (byte b in length)
+                        foreach (byte b in length.Reverse())
                         {
                             packetData.AddRange(ByteStuffing((byte)b));
                             checksum ^= b;
@@ -135,6 +135,11 @@ namespace HDMIOverIPApp.communication.net
                             packetData.AddRange(ByteStuffing(b));
                             checksum ^= b;
                         }
+                    }
+                    else
+                    {
+                        packetData.Add(ncd.Command);
+                        checksum ^= ncd.Command;
                     }
                 }
 
